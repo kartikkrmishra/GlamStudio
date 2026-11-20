@@ -1,188 +1,67 @@
-# 💄 Glam Studio – Beauty Salon Website
+# 💄 Glam Studio
 
-## Project Overview
+A responsive web application for a beauty salon and wellness center, featuring appointment booking, client accounts, and an administrative dashboard.
 
-Glam Studio is a beginner-friendly frontend project developed using **HTML**, **CSS**, and **JavaScript**. It represents a modern beauty salon where users can explore salon services, view the gallery, book appointments, register, log in, and manage their bookings.
-
-All project data is stored using **LocalStorage**, making it suitable for learning frontend development without requiring a backend.
-
----
-
-# Features
-
-## User Features
-
-- Home page with salon introduction
-- View available beauty services
-- Browse salon gallery
-- Book salon appointments
-- User registration
-- User login
-- View profile information
-- View appointment history
-- Logout functionality
-- Contact form
+[![Live Website](https://img.shields.io/badge/Live_Site-Visit_Glam_Studio-e91e63?style=flat-square&logo=google-chrome&logoColor=white)](https://kartikkrmishra.github.io/GlamStudio/)
+[![GitHub Pages](https://img.shields.io/badge/Deployment-GitHub_Pages-brightgreen?style=flat-square&logo=github)](https://kartikkrmishra.github.io/GlamStudio/)
+[![Tech Stack](https://img.shields.io/badge/Stack-HTML5%20|%20CSS3%20|%20JavaScript-blue?style=flat-square)](https://kartikkrmishra.github.io/GlamStudio/)
 
 ---
 
-## Admin Features
+## 🌟 Live Preview
 
-- Secure admin login
-- Dashboard overview
-- View registered users
-- View all appointments
-- Update appointment status
-- Delete appointments
-- Clear all bookings
-- Clear all registered users (admin account remains)
+Experience the live application hosted on GitHub Pages:
+👉 **[https://kartikkrmishra.github.io/GlamStudio/](https://kartikkrmishra.github.io/GlamStudio/)**
 
 ---
 
-# Technologies Used
+## 📌 Application Highlights
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- LocalStorage
-
----
-
-# Folder Structure
-
-```text
-GlamStudio/
-│
-├── index.html
-├── services.html
-├── gallery.html
-├── booking.html
-├── about.html
-├── contact.html
-├── login.html
-├── register.html
-├── profile.html
-├── admin.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   ├── script.js
-│   ├── auth.js
-│   ├── booking.js
-│   └── admin.js
-│
-├── images/
-│   ├── hero/
-│   ├── services/
-│   ├── gallery/
-│   ├── team/
-│   └── icons/
-│
-└── README.md
-```
+- **Service Catalog**: Browse through styling, skincare, makeup, and wellness packages with pricing and details.
+- **Booking Flow**: Multi-step booking form allowing clients to choose services, stylists, dates, and time slots.
+- **Client Profile**: Registered users can check their booking status and view past appointments.
+- **Admin Portal**: Dedicated dashboard to review incoming reservations, update appointment states, and manage users.
+- **Client-Side Persistence**: Fully functional without external server setup by using browser LocalStorage.
 
 ---
 
-# Website Pages
+## 🔑 Demo Access
 
-1. Home
-2. Services
-3. Gallery
-4. Book Appointment
-5. About
-6. Contact
-7. Login
-8. Register
-9. Profile
-10. Admin Dashboard
+To test administrative functionality:
+
+| Portal | Email | Password |
+| :--- | :--- | :--- |
+| Admin Dashboard (`admin.html`) | `admin@glam.com` | `admin123` |
 
 ---
 
-# LocalStorage Keys
+## 🛠️ Built With
 
-```text
-users
-loggedInUser
-bookings
-```
-
----
-
-# Default Admin Account
-
-```text
-Email:
-admin@glam.com
-
-Password:
-admin123
-```
+- **Structure**: Semantic HTML5 markup
+- **Design**: CSS3 (Flexbox, Grid, animations, and custom styling)
+- **Logic**: Vanilla JavaScript (ES6) for DOM updates, form validation, and storage handling
+- **Storage**: Browser LocalStorage API
 
 ---
 
-# Booking Workflow
+## 💻 Running Locally
 
-1. Register a new account.
-2. Log in as a user.
-3. Book a salon appointment.
-4. Appointment is saved in LocalStorage.
-5. User can view appointments in the Profile page.
-6. Admin can manage appointments from the dashboard.
-7. Status updates are reflected in the user's profile.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/kartikkrmishra/GlamStudio.git
+   cd GlamStudio
+   ```
 
----
+2. Start a local HTTP server:
+   ```bash
+   python3 -m http.server 3000
+   ```
 
-# Learning Objectives
-
-This project helps beginners understand:
-
-- Multi-page website development
-- Responsive layouts
-- Navigation between pages
-- HTML forms
-- Form validation
-- LocalStorage
-- User authentication
-- CRUD operations
-- JavaScript DOM manipulation
-- Event handling
-- Responsive design
+3. Open `http://localhost:3000` in your web browser.
 
 ---
 
-# Future Improvements
+## 👤 Author
 
-Possible enhancements include:
-
-- Backend integration
-- Database support
-- Online payment gateway
-- Appointment reminders
-- Email notifications
-- Service search and filters
-- Profile image upload
-- Dark mode
-- Real-time appointment availability
-
----
-
-# Browser Support
-
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
-- Brave
-- Opera
-
----
-
-# Author
-
-Developed as part of the **45 Days Frontend Projects** series for frontend practice and college-level submission.
-
----
-
-# License
-
-This project is created for educational and learning purposes only.
+**Kartik Kumar Mishra**
+- GitHub: [@kartikkrmishra](https://github.com/kartikkrmishra)
