@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Dashboard | Glam Studio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <h2>Glam Studio Admin</h2>
+      </div>
+
+      <nav>
+        <a href="index.html">Website</a>
+        <a href="admin.html" class="active">Dashboard</a>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+      <h1>Admin Dashboard</h1>
+
+      <p>Manage users and salon appointments from one place.</p>
+    </section>
+
+    <!-- Dashboard Summary -->
+
+    <section class="dashboard-summary">
+      <div class="summary-container">
+        <div class="summary-card">
+          <h3 id="adminTotalUsers">0</h3>
+
+          <p>Total Users</p>
+        </div>
+
+        <div class="summary-card">
+          <h3 id="adminTotalBookings">0</h3>
+
+          <p>Total Appointments</p>
+        </div>
+
+        <div class="summary-card">
+          <h3 id="adminPendingBookings">0</h3>
+
+          <p>Pending</p>
+        </div>
+
+        <div class="summary-card">
+          <h3 id="adminCompletedBookings">0</h3>
+
+          <p>Completed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Management -->
+
+    <section class="admin-table-section">
+      <h2>Appointment Management</h2>
+
+      <div class="table-container">
+        <table id="adminBookingTable">
+          <thead>
+            <tr>
+              <th>Customer</th>
+              <th>Email</th>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="adminBookingTableBody">
+            <!-- admin.js will insert data -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Registered Users -->
+
+    <section class="admin-table-section">
+      <h2>Registered Users</h2>
+
+      <div class="table-container">
+        <table id="userTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </thead>
+
+          <tbody id="userTableBody">
+            <!-- admin.js will insert users -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+
+    <section class="admin-actions">
+      <h2>Quick Actions</h2>
+
+      <div class="action-container">
+        <button id="clearBookingsBtn" class="btn">Clear All Bookings</button>
+
+        <button id="clearUsersBtn" class="btn">Clear All Users</button>
+
+        <button id="adminLogoutBtn" class="btn">Logout</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Glam Studio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Register | Glam Studio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <h2>Glam Studio</h2>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Now</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+      <h1>Create Your Account</h1>
+
+      <p>Register to book appointments and manage your beauty profile.</p>
+    </section>
+
+    <!-- Register -->
+
+    <section class="auth-section">
+      <div class="auth-container">
+        <div class="auth-image">
+          <img src="images/icons/register.jpg" alt="Register" />
+        </div>
+
+        <div class="auth-form">
+          <h2>Register</h2>
+
+          <form id="registerForm">
+            <div class="form-group">
+              <label>Full Name</label>
+
+              <input
+                type="text"
+                id="registerName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+
+              <input
+                type="email"
+                id="registerEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+
+              <input
+                type="tel"
+                id="registerPhone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Password</label>
+
+              <input
+                type="password"
+                id="registerPassword"
+                placeholder="Create password"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Confirm Password</label>
+
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm password"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn">Create Account</button>
+          </form>
+
+          <div class="auth-links">
+            <p>
+              Already have an account?
+
+              <a href="login.html"> Login Here </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Benefits -->
+
+    <section class="auth-benefits">
+      <h2>Member Benefits</h2>
+
+      <div class="benefit-container">
+        <div class="benefit-card">
+          <h3>Easy Booking</h3>
+
+          <p>Book salon appointments in just a few clicks.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Appointment History</h3>
+
+          <p>View all your previous and upcoming appointments.</p>
+        </div>
+
+        <div class="benefit-card">
+          <h3>Profile Management</h3>
+
+          <p>Update your personal information anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Glam Studio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Profile | Glam Studio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header>
+      <div class="logo">
+        <h2>Glam Studio</h2>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Now</a>
+        <a href="profile.html" class="active">Profile</a>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="page-banner">
+      <h1>My Profile</h1>
+
+      <p>Manage your account and view your salon appointments.</p>
+    </section>
+
+    <!-- Profile -->
+
+    <section class="profile-section">
+      <div class="profile-card">
+        <img src="images/icons/user.png" alt="User" />
+
+        <h2 id="profileName">Guest User</h2>
+
+        <p id="profileEmail">example@email.com</p>
+
+        <p id="profilePhone">+91 XXXXXXXXXX</p>
+
+        <button id="logoutBtn" class="btn">Logout</button>
+      </div>
+    </section>
+
+    <!-- Appointments -->
+
+    <section class="appointments-section">
+      <h2>My Appointments</h2>
+
+      <div id="noBookings" class="empty-box">
+        <p>No appointments booked yet.</p>
+
+        <a href="booking.html" class="btn"> Book Appointment </a>
+      </div>
+
+      <div class="table-container">
+        <table id="bookingTable">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody id="bookingTableBody">
+            <!-- booking.js will add rows here -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Account Summary -->
+
+    <section class="profile-summary">
+      <h2>Account Summary</h2>
+
+      <div class="summary-container">
+        <div class="summary-card">
+          <h3 id="totalBookings">0</h3>
+
+          <p>Total Bookings</p>
+        </div>
+
+        <div class="summary-card">
+          <h3 id="pendingBookings">0</h3>
+
+          <p>Pending</p>
+        </div>
+
+        <div class="summary-card">
+          <h3 id="completedBookings">0</h3>
+
+          <p>Completed</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Glam Studio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
